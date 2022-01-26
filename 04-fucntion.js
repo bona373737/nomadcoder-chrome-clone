@@ -1,4 +1,4 @@
-// fucntion : 반복적으로 사용될 코드조각
+// fucntion : 코드를 캡슐화 해서 계속 반복적으로 사용하도록 만드는것 
 
 console.log("Hello bona");
 console.log("Hello nana");
@@ -54,3 +54,27 @@ const player = {
     }
 }
 player.sayHello3();
+
+// 계산기 객체 만들기
+const calculator = {
+    plus : function(a,b){
+        console.log(a+b);
+    },
+    divide : function(a,b){
+        console.log(a-b)
+    }
+}
+calculator.plus(2,3);
+calculator.divide(5,10);
+
+//외국나이 -> 한국나이 변환계산기(결과값 반환)
+const age = 96;
+function calculatorKrAge(ageOfForeinger){
+    //함수의 결과를 함수 외부코드와 교류하는 방법 :"return"
+    return ageOfForeinger + 2;
+}
+const krAge = calculatorKrAge(age);
+console.log(krAge);
+
+
+
