@@ -6,7 +6,7 @@ console.log(typeof age);
 //데이터변환
 age = parseInt(age);
 console.log(age);
-console.log(typeof age);
+console.log(typeof age);  //NaN이어도 데이터형식은 number로 나온다.
 
 // const age = parseInt(prompt("How old are you?"));
 // console.log(age);
