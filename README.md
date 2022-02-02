@@ -22,10 +22,14 @@ document.getElementsByID
 해당 html요소들에서 발생하는 event(클릭,키보드 등의 사용자 행동)를 감지하여
 event에 호출할 함수를 명시해두고, 클릭했을때 특정 동작이 이루어지도록 설정할 수 있다.
 MDN doc참고 : 
-removeEventListener를 사용해 event를 삭제 할수도 있음
+  - removeEventListener  : event 삭제 
 
-*가져온 html요소들의 style도 자바스크립트로 변경가능하지만   
-스타일관련 사항은 css파일에서 관리하는 것이 작업이 효과적이다. 
+## <가져온 HTML 요소들을 CSS로 변경하는 방법>
+가져온 html요소들의 style을 자바스크립트로 변경가능하지만   
+스타일관련 사항은 css파일에서 통합관리하는 것이 효율적이다.   
+  - classList 
+  - classList.toggle
+
 
 
 ## window 
