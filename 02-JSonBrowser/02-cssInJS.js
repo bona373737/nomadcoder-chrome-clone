@@ -20,6 +20,7 @@ const h1 = document.querySelector("div.hello:first-child h1")
 // }
 
 
+
 //classList 사용-------------------------------------------------------------------
 function handleTitleClick1() {
     const clickClass = "clicked";
@@ -27,6 +28,23 @@ function handleTitleClick1() {
         h1.classList.remove(clickClass);
     }else {
         h1.classList.add(clickClass);
+
+// function handleTitleClick(){
+//     if(h1.className === "clicked"){
+//         h1.className = "";
+//     }else {
+//         h1.className ="clicked";
+//     }
+// }
+
+
+const clickedClass = "clicked";
+function handleTitleClick(){
+    if(h1.className === clickedClass){
+        h1.className = "";
+    }else {
+        h1.className =clickedClass;
+
     }
 }
 
