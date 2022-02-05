@@ -1,4 +1,11 @@
-# nomadcoder-clone-coding
+# nomadcoder chromeApp "Momentum" clone
+  - 기능1 : 시계
+  - 기능2 : 날씨
+  - 기능3 : 
+  - 기능4 : todoList
+![Momentum](res/momentum.png)
+
+
 ## 기초학습 
 HTML이 파일내에 참조되어 있는 JS파일을 load하면 그때부터 Document객체 사용가능
 
@@ -35,10 +42,15 @@ MDN doc참고 :
 ## window 
 
 
----
-## clone코딩작업
-1. Login
-2. Clock
-3. Quote and Background
-4. Todo List
-5. Weather
+## 브라우저의 기본동작 제어 
+브라우저의 기본동작이란 브라우저가 특정function에 대해 기본적으로 수행하는 동작을 의미한다.
+이 기본동작을 막기위해 개발자가 별도로 제어하는 작업이 필요한 경우가 있다.
+
+  - 브라우저는 Form이 submit되면 화면을 자동으로 새로고침한다.   
+    사용자가 입력한 내용이 화면에 남아있도록 새로고침 되지 않도록 제어.
+
+
+## 태그의 기본동작
+  - Form태그의 기본동작은 submit
+  - a태그의 기본동작은 link
+
