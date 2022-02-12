@@ -11,18 +11,47 @@ HTML이 파일내에 참조되어 있는 JS파일을 load하면 그때부터 Doc
 
 
 ## < Html의 요소들을 자바스크립트로 가져오는방법 >
-1.
-(리턴타입 : array )
-document.getElementsByID
-  document.getElementsByClassName
-  document.getElementsByTagName
-  document.getElementsBy
+1. 방법1.Accessing Elements by Unique Identifier (ID)   
+리턴타입 : object
+```js
+const title = document.getElementById('title');
+console.log(typeof title);
+console.log(title);
+title.innerHTML = "객체.메서드 사용가능"
+```
+2. 방법2.Accessing Elements by Class   
+리턴타입 : object..정확히는 Array
+```js
+const person = document.getElementsByClassName('person');
+console.log(typeof person);
+console.log(person);
+person.innerHTML ="(X) 객체.메서드 사용불가능..배열이니까"
+person[1].innerHTML ="(O) 인덱스번호 명시하여 객체.메서드 사용가능"
+```
+3. 방법3.Accessing Elements by Tag   
+리턴타입 : object...정확히는 Array
+```js
+const li = document.getElementsByTagName('li');
+console.log(typeof li);
+console.log(li);
+li.innerHTML ="(X) 객체.메서드 사용불가능..배열이니까"
+li[1].innerHTML ="(O) 인덱스번호 명시하여 객체.메서드 사용가능"
+```
+4. 방법4.Accessing Elements by CSS Selector
+```js
+//리턴타입: object
+const title = document.querySelector('#title');
+console.log(typeof title);
+console.log(title);
+title.innerHTML = "객체.메서드 사용가능"
 
-2. CSS셀렉터사용하여 가져오기
-(리턴타입: element)
-- document.querySelector
-- document.querySelectorAll
-
+//리턴타입 : object...정확히는 Array
+const hello = document.querySelectorAll('.hello h1:first-child');
+console.log(typeof hello);
+console.log(hello)
+hello.innerHTML ="(X) 객체.메서드 사용불가능..배열이니까"
+hello[1].innerHTML ="(O) 인덱스번호 명시하여 객체.메서드 사용가능"
+```
 
 ## < 가져온 HTMl 요소들을 자바스크립트로 변경하는 방법>
 1.가져온 Html 요소들에 event Listener 추가하기
