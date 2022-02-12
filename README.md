@@ -39,7 +39,9 @@ MDN doc참고 :
 
 
 
-## window 
+
+
+## window 객체
 
 
 ## 브라우저의 기본동작 제어 
