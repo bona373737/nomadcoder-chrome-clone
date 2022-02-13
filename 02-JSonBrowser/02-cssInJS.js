@@ -60,13 +60,9 @@
 
 
 
-
 //***위의 코드를 구현하는 function사용
 const h1 = document.querySelector("div.hello:first-child h1");
-
 function handleTitleClick() {
     h1.classList.toggle("cssClass");
-}
-
-
-h1.addEventListener("click", handleTitleClick);
+};
+h1.addEventListener("click", handleTitleClick); 
